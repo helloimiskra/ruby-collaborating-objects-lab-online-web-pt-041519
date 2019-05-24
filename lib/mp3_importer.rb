@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-    Dir.entries("fixtures")
+    files = Dir.glob(".MP3") {|file| puts file }
   end
 
   def import
