@@ -18,9 +18,7 @@ class Song
     song_name = file_name[1]
     song = Song.new(song_name)
     song.artist = Artist.find_or_create_by_name(artist_name)
-    # binding.pry
     return song
-
   end
 
 
