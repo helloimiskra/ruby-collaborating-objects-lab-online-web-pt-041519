@@ -6,11 +6,15 @@ class Song
     @artist = artist
   end
 
+  def self.artist
+    @artist
+  end
 
 
   def self.new_by_filename(filename)
     file_name = filename.split(" - ")
-    song.name = file_name[0]
+    file_name[1] = Song.new 
+    
     song.artist = file_name[1]
   end
 
