@@ -7,7 +7,7 @@ class MP3Importer
 
   def files
     @files = []
-    @files << Dir['*.mp3']
+    @files << Dir['**/*.mp3']
     @files
   end
 
