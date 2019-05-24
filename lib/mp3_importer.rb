@@ -7,7 +7,7 @@ class MP3Importer
 
   def files
     @files = []
-    @files << Dir['fix**/**/*.mp3']
+    @files << Dir.glob(*.mp3).each {|f| puts f}
     @files
   end
 
