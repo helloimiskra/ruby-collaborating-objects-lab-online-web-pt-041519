@@ -6,8 +6,7 @@ class MP3Importer
   end
 
   def files
-    @files = Dir.glob('*.mp3').each {|f| puts f}
-    @files
+    Dir.entries("fixtures")
   end
 
   def import
