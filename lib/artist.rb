@@ -29,7 +29,7 @@ class Artist
     end
     artist
   end
-    
-    
+
+
 
 end
