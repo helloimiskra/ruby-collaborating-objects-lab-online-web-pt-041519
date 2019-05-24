@@ -7,7 +7,7 @@ class MP3Importer
 
   def files
     @files = []
-    @files << Dir.glob("*.MP3")
+    @files << Dir["/path/to/search/*.MP3"]
     @files
   end
 
