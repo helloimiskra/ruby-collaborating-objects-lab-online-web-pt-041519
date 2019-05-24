@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-    @files = Dir.glob(".MP3").each {|file| puts file}
+    @files = Dir.glob(".MP3").map {|file| puts file}
   end
 
   def import
