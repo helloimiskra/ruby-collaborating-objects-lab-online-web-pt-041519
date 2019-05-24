@@ -19,7 +19,7 @@ class Song
     song = self.new(song_name)
     song.artist = Artist.find_or_create_by_name(artist_name)
     song
-    
+
   end
 
 
