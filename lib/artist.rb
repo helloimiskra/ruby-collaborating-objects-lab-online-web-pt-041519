@@ -22,4 +22,14 @@ class Artist
     @@all << self
   end
 
+  def self.find_or_create_by_name(name)
+    artist = @@all.find {|artist| artist.name == name}
+    artist == nil ? name = Artist.new
+      artist = Artist.new(name)
+    end
+    artist
+  end
+    
+    
+
 end
